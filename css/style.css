@@ -1,0 +1,10 @@
+/** Fix padding on either sides on viewport **/
+body {
+	margin: 0 15px;
+}
+
+/** Remove text-shadow and re-color on custom content within off canvas nav **/
+.uk-offcanvas .uk-navbar-content {
+	text-shadow: none;
+	color: #fff;
+}

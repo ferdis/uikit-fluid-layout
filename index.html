@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fluid layout</title>
+		<link rel="stylesheet" href="css/uikit.min.css" />
+		<!-- Almost Flat style -->
+		<link rel="stylesheet" href="css/uikit.almost-flat.min.css" />
+		<!-- Gradient style -->
+		<!-- <link rel="stylesheet" href="css/uikit.gradient.min.css" /> -->
+
+		<!-- Some fixes to things that are irregular to UIkit -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="js/uikit.min.js"></script> 
+	</head>
+	<body>
+		<nav class="uk-navbar uk-navbar-attached">
+			<a href="#" class="uk-navbar-brand">Project name</a>
+			<ul class="uk-navbar-nav uk-hidden-small ">
+				<li class="uk-active"><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+
+			<div class="uk-navbar-flip">
+				<div class="uk-navbar-content uk-hidden-small">Logged in as <a href="#">Username</a></div>
+
+				<a href="#my-id" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas="{target:'#my-id'}"></a>
+			</div>
+		</nav>
+
+		<div id="my-id" class="uk-offcanvas">
+			<div class="uk-offcanvas-bar">
+				<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="">
+					<li class="uk-active"><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li class="uk-nav-divider"></li>
+				</ul>
+				<div class="uk-navbar-content">
+					Logged in as <a href="#">Username</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Needed for padding at top of body, to look more like Bootstrap's example -->
+		<br><br>
+
+		<div class="uk-grid">
+			<div class="uk-width-medium-1-3">
+				<ul class="uk-nav uk-nav-side">
+					<li class="uk-nav-header">Sidebar</li>
+					<li class="uk-active"><a href="#">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li class="uk-nav-header">Sidebar</li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li class="uk-nav-header">Sidebar</li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+					<li><a href="">Link</a></li>
+				</ul>
+			</div>
+			<div class="uk-width-medium-2-3">
+
+
+				<!-- UIkit has an alternative to "hero unit", either panel or article - showing implementation of both. -->
+
+				<article class="uk-article">
+					<h1 class="uk-article-title">Hello, world!</h1>
+					<p class="uk-article-lead">
+						This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+					</p>
+					
+					<button class="uk-button uk-button-primary uk-button-large">Learn more &raquo;</button>
+				</article>
+
+				<!-- Panel alternative -->
+				<!--
+					<div class="uk-panel">
+						<h3 class="uk-panel-title">Hello, world!</h3>
+						<p>
+							This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+						</p>
+						
+						<button class="uk-button uk-button-primary" type="submit">Learn more &raquo;</button>
+					</div>
+				-->
+
+				<!-- Some spacing -->
+				<br><br>
+				<br>
+
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-3">
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Heading</h3>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+							<button class="uk-button">View details &raquo;</button>
+
+							<!-- No padding at bottom, add some -->
+							<br><br>
+						</div>
+					</div>
+					<div class="uk-width-medium-1-3">
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Heading</h3>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+							<button class="uk-button">View details &raquo;</button>
+							
+							<!-- No padding at bottom, add some -->
+							<br><br>
+						</div>
+					</div>
+					<div class="uk-width-medium-1-3">
+						<div class="uk-panel">
+							<h3 class="uk-panel-title">Heading</h3>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+							<button class="uk-button">View details &raquo;</button>
+							
+							<!-- No padding at bottom, add some -->
+							<br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Some spacing -->
+		<br><br>
+
+		<footer class="uk-align-left">
+			&copy; Company 2013
+		</footer>
+	</body>
+</html>
